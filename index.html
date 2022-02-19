@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header flex-row">
+        <nav class="nav-bar flex-row">
+            <h1 class="nav-bar__title">Dojonary</h1>
+            <input type="text" class="nav-bar__input" placeholder="Search">
+            <button class="nav-bar__button" onclick="btnLogIn(this)">Login</button>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="definition-section flex-row">
+            <div class="definition-section__1">
+                <h1 class="definition-section__title">ninja</h1>
+                <h2 class="definition-section__type">noun</h2>
+                <h2 class="definition-section__plural">Plural <span class="definition-section__plural--highlighted">ninjas</span></h2>
+                <button class="definition-section__button" onclick="btnAddLike(this)">13 likes</button>
+            </div>
+            <div class="definition-section__2">
+                 <p class="definition-section__description">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+            </div>
+        </section>
+        <section class="add-definition-section">
+            <h2 class="add-definition-section__annnouncement">Dojonary is defined<b> YOU</b></h2>
+            <button class="add-definition-section__button" onclick="btnAddDefinition(this)">Add Definition</button>
+        </section>
+        <section class="definition-section flex-row">
+            <div class="definition-section__1">
+                <h1 class="definition-section__title">ninja</h1>
+                <h2 class="definition-section__type">noun</h2>
+                <h2 class="definition-section__plural">Plural <span>ninjas</span></h2>
+                <button class="definition-section__button" onclick="btnAddLike(this)">37 likes</button>
+            </div>
+            <div class="definition-section__2">
+                <p class="definition-section__description">A programmer who breaks down problems with <a href="#">zen</a>-like focus</p>
+           </div>
+        </section>
+    </main>
+    <template id="like-announcement">
+        <section class="like-announcement-section">
+            <h2>This page says</h2>
+            <p>Ninja was liked</p>
+            <div>OK</div>
+        </section>
+    </template>
+    <script src="/src/index.js"></script>
+    
+</body>
+</html>
